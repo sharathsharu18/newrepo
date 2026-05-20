@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Sharath S Portfolio</title>
+    <meta
+      name="description"
+      content="A showcase of Sharath S portfolio projects built with modern CSS and accessibility."
+    />
+    <meta
+      name="keywords"
+      content="projects, portfolio, responsive design, CSS Grid, accessibility"
+    />
+    <meta name="author" content="Sharath S" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-theme="light">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header role="banner">
+      <div class="site-header">
+        <a class="brand" href="index.html">Sharath S</a>
+        <nav aria-label="Primary navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html" aria-current="page">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <button
+          class="theme-toggle"
+          id="theme-toggle"
+          type="button"
+          aria-pressed="false"
+        >
+          Dark mode
+        </button>
+      </div>
+    </header>
+    <main id="main-content">
+      <section aria-labelledby="projects-page-heading">
+        <div class="section-heading">
+          <span aria-hidden="true">📁</span>
+          <h2 id="projects-page-heading">Featured work</h2>
+        </div>
+        <p>
+          A few example projects showing my approach to responsive layouts,
+          accessible components, and polished interface details.
+        </p>
+        <div class="grid project-list">
+          <article class="card">
+            <h3>Portfolio Refresh</h3>
+            <p>
+              Designed a clean personal website with strong visual rhythm,
+              accessible navigation, and responsive typography.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Startup Landing Page</h3>
+            <p>
+              Built a simple marketing page with clear content sections, feature
+              cards, and strong mobile-first layout behavior.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Dashboard Mockup</h3>
+            <p>
+              Created a dashboard-style interface with card-based layout,
+              consistent spacing, and readable data presentation.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-inner">
+        <p>
+          &copy; 2026 Sharath S. Projects built with modern responsive
+          architecture.
+        </p>
+        <nav aria-label="Footer navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html" aria-current="page">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

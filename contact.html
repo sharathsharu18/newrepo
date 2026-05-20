@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Sharath S Portfolio</title>
+    <meta
+      name="description"
+      content="Contact page for Sharath S to request portfolio work, consultations, and responsive site development."
+    />
+    <meta
+      name="keywords"
+      content="contact, portfolio, web development, accessible website, responsive design"
+    />
+    <meta name="author" content="Sharath S" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-theme="light">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header role="banner">
+      <div class="site-header">
+        <a class="brand" href="index.html">Sharath S</a>
+        <nav aria-label="Primary navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
+          </ul>
+        </nav>
+        <button
+          class="theme-toggle"
+          id="theme-toggle"
+          type="button"
+          aria-pressed="false"
+        >
+          Dark mode
+        </button>
+      </div>
+    </header>
+    <main id="main-content">
+      <section id="contact" aria-labelledby="contact-page-heading">
+        <div class="section-heading">
+          <span aria-hidden="true">✉️</span>
+          <h2 id="contact-page-heading">Get in touch</h2>
+        </div>
+        <p>
+          Send a message about your next responsive, accessible website project.
+        </p>
+        <form action="#" method="post" class="card" novalidate>
+          <div class="contact-grid">
+            <div>
+              <label for="full-name">Full name</label>
+              <input
+                type="text"
+                id="full-name"
+                name="name"
+                required
+                aria-required="true"
+                placeholder="Your name"
+              />
+            </div>
+            <div>
+              <label for="email">Email address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                aria-required="true"
+                placeholder="you@example.com"
+              />
+            </div>
+            <div>
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject" required aria-required="true">
+                <option value="">Choose a topic</option>
+                <option value="consultation">Consultation request</option>
+                <option value="project">Project inquiry</option>
+                <option value="other">Other question</option>
+              </select>
+            </div>
+            <div>
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                required
+                aria-required="true"
+                placeholder="Tell me about your project or question"
+              ></textarea>
+            </div>
+          </div>
+          <div class="form-actions">
+            <button type="submit">Send message</button>
+            <p aria-live="polite">
+              Your message will be reviewed and replied to within 24 hours.
+            </p>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-inner">
+        <p>
+          &copy; 2026 Sharath S. Ready to deliver accessible, responsive
+          websites.
+        </p>
+        <nav aria-label="Footer navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

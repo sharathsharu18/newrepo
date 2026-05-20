@@ -3,20 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Accessible Portfolio | Sharath S</title>
+    <title>Sharath S | Front-End Portfolio</title>
     <meta
       name="description"
-      content="A semantic, accessible portfolio website demonstrating HTML5 structure, WCAG best practices, and an SEO-friendly layout."
+      content="Sharath S is a front-end developer creating accessible, responsive websites with semantic HTML and modern CSS."
     />
     <meta
       name="keywords"
-      content="portfolio, accessible website, HTML5, semantic HTML, web accessibility"
+      content="Sharath S, front-end developer, portfolio, responsive web design, accessibility"
     />
     <meta name="author" content="Sharath S" />
     <link rel="icon" href="favicon.ico" />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body data-theme="light">
     <a class="skip-link" href="#main-content">Skip to main content</a>
 
     <header role="banner">
@@ -24,28 +24,47 @@
         <a class="brand" href="index.html">Sharath S</a>
         <nav aria-label="Primary navigation">
           <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
+        <button
+          class="theme-toggle"
+          id="theme-toggle"
+          type="button"
+          aria-pressed="false"
+        >
+          Dark mode
+        </button>
       </div>
 
-      <section class="hero" aria-labelledby="hero-heading">
-        <div>
-          <p>HTML5 Semantic Structure &amp; WCAG Accessibility</p>
+      <section class="hero hero-grid" aria-labelledby="hero-heading">
+        <div class="hero-content">
+          <p>Front-end development with accessibility at the core</p>
           <h1 id="hero-heading">
-            Accessible portfolio design built with modern HTML and ARIA.
+            I build responsive, accessible websites that feel polished and fast.
           </h1>
           <p>
-            This portfolio skeleton uses semantic HTML5, accessible navigation,
-            optimized SEO metadata, and a keyboard-friendly contact form.
+            I am Sharath S — a front-end developer who crafts semantic HTML,
+            CSS-driven layouts, and user-friendly interactions for modern
+            brands.
           </p>
           <div class="hero-actions">
-            <a class="button" href="#contact">Work with me</a>
-            <a class="button-secondary" href="#projects">See projects</a>
+            <a class="button" href="contact.html#contact">Work with me</a>
+            <a class="button-secondary" href="projects.html">See projects</a>
           </div>
         </div>
+        <aside class="hero-panel" aria-label="Portfolio highlights">
+          <p>What I deliver</p>
+          <ul>
+            <li>Responsive UI systems designed for all screen sizes</li>
+            <li>Clean semantic HTML with accessibility best practices</li>
+            <li>CSS Grid and Flexbox layouts for modern websites</li>
+            <li>Light/dark theme support and polished interactions</li>
+          </ul>
+        </aside>
       </section>
     </header>
 
@@ -56,30 +75,30 @@
           <h2 id="about-heading">About this portfolio</h2>
         </div>
         <p>
-          A modern HTML5 portfolio page built to meet accessibility goals.
-          Semantic landmarks, explicit form labels, descriptive link text, and
-          accessible ARIA roles are all included.
+          I am a front-end developer who turns design ideas into accessible,
+          responsive websites. This portfolio showcases my practical approach to
+          building modern web interfaces and clean user experiences.
         </p>
         <div class="grid feature-list" role="list">
           <article class="card" role="listitem">
-            <h3>Semantic structure</h3>
+            <h3>Accessible interfaces</h3>
             <p>
-              Uses header, main, section, article, and footer for clearly
-              defined content regions.
+              I build keyboard-friendly pages with semantic HTML, clear
+              navigation, and ARIA-aware patterns for real-world users.
             </p>
           </article>
           <article class="card" role="listitem">
-            <h3>WCAG-friendly form</h3>
+            <h3>Responsive layouts</h3>
             <p>
-              A fully labeled contact form with keyboard focus styling and
-              accessible validation hints.
+              My work uses mobile-first design, CSS Grid, and Flexbox so every
+              screen size looks polished.
             </p>
           </article>
           <article class="card" role="listitem">
-            <h3>SEO-ready metadata</h3>
+            <h3>Practical polish</h3>
             <p>
-              Includes title, description, keywords, and author metadata for
-              search optimization.
+              I deliver reliable portfolio builds with thoughtful spacing,
+              readable typography, and strong visual hierarchy.
             </p>
           </article>
         </div>
@@ -95,33 +114,30 @@
           <h2 id="projects-heading">Featured projects</h2>
         </div>
         <p>
-          Example portfolio projects with clear, accessible summaries and
-          descriptive project links.
+          A selection of recent work showing responsive layouts, accessible
+          design, and polished user interfaces.
         </p>
         <div class="grid project-list">
           <article class="card">
-            <h3>Portfolio Redesign</h3>
+            <h3>Portfolio Refresh</h3>
             <p>
-              Designed a responsive portfolio layout with semantic HTML and
-              inclusive navigation.
+              Built a clean portfolio homepage with responsive sections,
+              consistent typography, and a focus on usability.
             </p>
-            <p><a href="#contact">Request project details</a></p>
           </article>
           <article class="card">
-            <h3>Accessibility Audit</h3>
+            <h3>Landing page for a startup</h3>
             <p>
-              Performed WCAG 2.1 checks, added ARIA labels, and improved
-              keyboard navigation support.
+              Created an attractive landing page layout with a strong hero
+              section and easy-to-scan feature cards.
             </p>
-            <p><a href="#contact">Learn more</a></p>
           </article>
           <article class="card">
-            <h3>SEO Content Strategy</h3>
+            <h3>Dashboard UI concept</h3>
             <p>
-              Optimized metadata, headings, and content structure to improve
-              search engine visibility.
+              Developed a simple admin dashboard design using grid-based cards
+              and consistent spacing for quick readability.
             </p>
-            <p><a href="#contact">See the plan</a></p>
           </article>
         </div>
       </section>
@@ -192,14 +208,14 @@
     <footer>
       <div class="footer-inner">
         <p>
-          &copy; 2026 Chethan Surya. Built with semantic HTML and accessibility
-          best practices.
+          &copy; 2026 Sharath S. Built with semantic HTML and accessibility best
+          practices.
         </p>
         <nav aria-label="Footer navigation">
           <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
       </div>

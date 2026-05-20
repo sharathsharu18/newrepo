@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Sharath S Portfolio</title>
+    <meta
+      name="description"
+      content="About Sharath S and the portfolio design approach for semantic HTML and accessibility."
+    />
+    <meta
+      name="keywords"
+      content="about, portfolio, accessibility, semantic HTML, responsive design"
+    />
+    <meta name="author" content="Sharath S" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-theme="light">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header role="banner">
+      <div class="site-header">
+        <a class="brand" href="index.html">Sharath S</a>
+        <nav aria-label="Primary navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" aria-current="page">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <button
+          class="theme-toggle"
+          id="theme-toggle"
+          type="button"
+          aria-pressed="false"
+        >
+          Dark mode
+        </button>
+      </div>
+    </header>
+    <main id="main-content">
+      <section aria-labelledby="about-page-heading">
+        <div class="section-heading">
+          <span aria-hidden="true">👤</span>
+          <h2 id="about-page-heading">About Sharath S</h2>
+        </div>
+        <p>
+          I am a front-end developer with a passion for creating accessible,
+          responsive websites that work well on every device. I enjoy refining
+          layouts, improving usability, and building polished user-facing pages.
+        </p>
+        <div class="grid feature-list" role="list">
+          <article class="card" role="listitem">
+            <h3>Practical design</h3>
+            <p>
+              I translate visual ideas into code with a focus on readability,
+              performance, and a strong visual hierarchy.
+            </p>
+          </article>
+          <article class="card" role="listitem">
+            <h3>Modern workflows</h3>
+            <p>
+              I use semantic HTML, CSS Grid, Flexbox, and responsive breakpoints
+              to build clean, maintainable sites.
+            </p>
+          </article>
+          <article class="card" role="listitem">
+            <h3>Useful interactions</h3>
+            <p>
+              My projects include forms, navigation, and components designed for
+              keyboard and touchscreen users alike.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section aria-labelledby="process-heading">
+        <div class="section-heading">
+          <span aria-hidden="true">⚙️</span>
+          <h2 id="process-heading">How I build</h2>
+        </div>
+        <div class="grid project-list">
+          <article class="card">
+            <h3>Start with structure</h3>
+            <p>
+              I begin each project with semantic HTML and a mobile-first layout
+              approach to keep the foundation solid.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Refine each screen</h3>
+            <p>
+              Then I layer responsive CSS, focusing on spacing, typography, and
+              accessible interactions across viewports.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-inner">
+        <p>&copy; 2026 Sharath S. A semantic, accessible portfolio.</p>
+        <nav aria-label="Footer navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" aria-current="page">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
